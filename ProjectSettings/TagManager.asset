@@ -6,6 +6,29 @@ TagManager:
   tags:
   - Ground
   - Hands
+  - LaserGun
+  - AmmoBox
+  - Bullet
+  - Enemy
+  - Text
+  - Coin
+  - Shop
+  - OutOfBounds
+  - EnemyBullet
+  - GameManager
+  - Invincibility
+  - DoubleJump
+  - InfoText
+  - InfoImage
+  - Button
+  - Spike
+  - ElectricityDoor
+  - Wires
+  - ElectricalBox
+  - Music
+  - EscapePod
+  - FinishButton
+  - ShopUI
   layers:
   - Default
   - TransparentFX
