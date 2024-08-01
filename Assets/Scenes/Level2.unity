@@ -325,7 +325,7 @@ RectTransform:
   - {fileID: 685630766}
   - {fileID: 1428138948}
   m_Father: {fileID: 871141736}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -2268,7 +2268,7 @@ RectTransform:
   - {fileID: 1647527359}
   - {fileID: 701783498}
   m_Father: {fileID: 871141736}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -5108,7 +5108,7 @@ RectTransform:
   - {fileID: 1011895476}
   - {fileID: 875119588}
   m_Father: {fileID: 871141736}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -8346,6 +8346,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 249924221}
   - {fileID: 565025562}
   - {fileID: 1724677501}
   - {fileID: 1737765600}
@@ -8355,7 +8356,6 @@ RectTransform:
   - {fileID: 2087406188}
   - {fileID: 610793166}
   - {fileID: 1989586441}
-  - {fileID: 249924221}
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8653,9 +8653,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10fe66c0b32bcef4d998330f3c769962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trapdoor: {fileID: 1669254335}
-  interactUI: {fileID: 565025561}
-  keyText: {fileID: 875119590}
 --- !u!61 &887175836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9266,7 +9263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8583302678435312101, guid: 81c6bba54184fe8408eb0694fe3be483, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8583302678435312101, guid: 81c6bba54184fe8408eb0694fe3be483, type: 3}
       propertyPath: m_AnchorMax.x
@@ -11279,9 +11276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd021f6481fe784182392ddaf37fef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spikes: {fileID: 2033386308}
-  interactUI: {fileID: 565025561}
-  keyText: {fileID: 875119590}
 --- !u!61 &1175984967
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13624,7 +13618,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04116407, y: 0.3018925}
+  m_Offset: {x: -0.04116404, y: 0.35298803}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13635,7 +13629,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4118214, y: 0.7267243}
+  m_Size: {x: 1.4118214, y: 0.62453324}
   m_EdgeRadius: 0
 --- !u!212 &1434030033
 SpriteRenderer:
@@ -15307,7 +15301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20784315, g: 0.20784315, b: 0.20784315, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16873,7 +16867,7 @@ RectTransform:
   - {fileID: 1423429817}
   - {fileID: 165283385}
   m_Father: {fileID: 871141736}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -17072,7 +17066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7460911022881743182, guid: ac9d7039a89f1a54cac68dfa4f340b88, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7460911022881743182, guid: ac9d7039a89f1a54cac68dfa4f340b88, type: 3}
       propertyPath: m_AnchorMax.x
@@ -18267,7 +18261,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1989586442}
         m_TargetAssemblyTypeName: EndUI, Assembly-CSharp
-        m_MethodName: LoadMenu
+        m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19802,10 +19796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b57c53ef373094ca1bb6f1218094f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trapdoor: {fileID: 255172506}
-  interactUI: {fileID: 565025561}
-  keyText: {fileID: 875119590}
-  hands: {fileID: 715534010}
 --- !u!61 &1948746285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20736,7 +20726,7 @@ RectTransform:
   - {fileID: 1161236121}
   - {fileID: 1099430291}
   m_Father: {fileID: 871141736}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21146,7 +21136,7 @@ RectTransform:
   - {fileID: 84204024}
   - {fileID: 1757216431}
   m_Father: {fileID: 871141736}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -21213,7 +21203,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05636823, y: 0.30693948}
+  m_Offset: {x: -0.05636823, y: 0.36512983}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21224,7 +21214,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.365845, y: 0.7022394}
+  m_Size: {x: 1.365845, y: 0.5858587}
   m_EdgeRadius: 0
 --- !u!212 &2033386310
 SpriteRenderer:
@@ -21901,7 +21891,7 @@ RectTransform:
   - {fileID: 372568272}
   - {fileID: 1905516901}
   m_Father: {fileID: 871141736}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -22541,7 +22531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4694786254529441129, guid: d4e2e67339d3fb94a8151ff815aa1bbc, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4694786254529441129, guid: d4e2e67339d3fb94a8151ff815aa1bbc, type: 3}
       propertyPath: m_AnchorMax.x
