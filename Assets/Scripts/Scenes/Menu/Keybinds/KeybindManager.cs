@@ -120,29 +120,38 @@ public class KeybindManager : MonoBehaviour
                 currentKey.transform.GetChild(0).GetComponent<Text>().text = "F";
                 currentKey = null;
             }
-            if (currentKey.name == "Interact")
+            else
             {
-                keys.Add(currentKey.name, KeyCode.E);
-                PlayerPrefs.SetString(currentKey.name, "E");
-                currentKey.GetComponent<Image>().color = normal;
-                currentKey.transform.GetChild(0).GetComponent<Text>().text = "E";
-                currentKey = null;
-            }
-            if (currentKey.name == "OpenShop")
-            {
-                keys.Add(currentKey.name, KeyCode.E);
-                PlayerPrefs.SetString(currentKey.name, "E");
-                currentKey.GetComponent<Image>().color = normal;
-                currentKey.transform.GetChild(0).GetComponent<Text>().text = "E";
-                currentKey = null;
-            }
-            if (currentKey.name == "Button")
-            {
-                keys.Add(currentKey.name, KeyCode.E);
-                PlayerPrefs.SetString(currentKey.name, "E");
-                currentKey.GetComponent<Image>().color = normal;
-                currentKey.transform.GetChild(0).GetComponent<Text>().text = "E";
-                currentKey = null;
+                if (currentKey.name == "Interact")
+                {
+                    keys.Add(currentKey.name, KeyCode.E);
+                    PlayerPrefs.SetString(currentKey.name, "E");
+                    currentKey.GetComponent<Image>().color = normal;
+                    currentKey.transform.GetChild(0).GetComponent<Text>().text = "E";
+                    currentKey = null;
+                }
+                else
+                {
+                    if (currentKey.name == "OpenShop")
+                    {
+                        keys.Add(currentKey.name, KeyCode.E);
+                        PlayerPrefs.SetString(currentKey.name, "E");
+                        currentKey.GetComponent<Image>().color = normal;
+                        currentKey.transform.GetChild(0).GetComponent<Text>().text = "E";
+                        currentKey = null;
+                    }
+                    else
+                    {
+                        if (currentKey.name == "Button")
+                        {
+                            keys.Add(currentKey.name, KeyCode.E);
+                            PlayerPrefs.SetString(currentKey.name, "E");
+                            currentKey.GetComponent<Image>().color = normal;
+                            currentKey.transform.GetChild(0).GetComponent<Text>().text = "E";
+                            currentKey = null;
+                        }
+                    }
+                }
             }
         }
     }

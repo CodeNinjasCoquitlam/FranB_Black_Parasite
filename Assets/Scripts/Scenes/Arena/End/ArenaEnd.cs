@@ -19,7 +19,9 @@ public class ArenaEnd : MonoBehaviour
         UnlockedPrototype();
         gameManager.SaveValues();
         Time.timeScale = 1;
-        Invoke("LoadNextLevel", 1.5f);
+        Debug.Log("prototype");
+
+        LoadNextLevel();
     }
 
     public void BackToMenu()
@@ -28,7 +30,7 @@ public class ArenaEnd : MonoBehaviour
         UnlockedPrototype();
         gameManager.SaveValues();
         Time.timeScale = 1;
-        Invoke("LoadMenu", 1.5f);
+        LoadMenu();
     }
 
     public void Quit()
@@ -37,7 +39,7 @@ public class ArenaEnd : MonoBehaviour
         UnlockedPrototype();
         gameManager.SaveValues();
         Time.timeScale = 1;
-        Invoke("ActuallyQuit", 1.5f);
+        ActuallyQuit();
     }
 
     void UnlockedPrototype()
@@ -52,13 +54,15 @@ public class ArenaEnd : MonoBehaviour
 
     public void LoadMenu()
     {
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
+
         SceneManager.LoadScene("Menu");
     }
 
     public void LoadNextLevel()
     {
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
+        Debug.Log("load next level");
         SceneManager.LoadScene("Prototype");
     }
 

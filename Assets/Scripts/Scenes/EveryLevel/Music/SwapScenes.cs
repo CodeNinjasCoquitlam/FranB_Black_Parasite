@@ -35,5 +35,13 @@ public class SwapScenes : MonoBehaviour
         {
             MenuBGMusic.instance.GetComponent<AudioSource>().UnPause();
         }
+        if (SceneManager.GetActiveScene().name == "Arena")
+        {
+            MenuBGMusic.instance.GetComponent<AudioSource>().Pause();
+        }
+        if (SceneManager.GetActiveScene().name == "Prototype")
+        {
+            MenuBGMusic.instance.GetComponent<AudioSource>().Pause();
+        }
     }
 }

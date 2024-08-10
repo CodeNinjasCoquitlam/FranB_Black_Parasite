@@ -29,11 +29,20 @@ public class OtherInteracts : MonoBehaviour
 
     [SerializeField] private GameObject gameManager;
 
+    void UnlockedNewLevel()
+    {
+        if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("UnlockedLevel"))
+        {
+            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel") + 1);
+            PlayerPrefs.Save();
+            print("Now: " + PlayerPrefs.GetInt("UnlockedLevel"));
+        }
+    }
+
     void Start()
     {
         gameManager = GameObject.FindWithTag("GameManager");
     }
-
     void Update()
     {
         if (CanGetIn2 == true && Input.GetKeyDown(KeyCode.E))
@@ -57,8 +66,11 @@ public class OtherInteracts : MonoBehaviour
             wiresOn = !wiresOn;
         }
 
-        if(CanFinish == true && Input.GetKeyDown(KeyCode.E))
+        if (CanFinish == true && Input.GetKeyDown(KeyCode.E))
         {
+            UnlockedNewLevel();
+            gameManager.GetComponent<GameManager>().SaveValues();
+            Time.timeScale = 1;
             SceneManager.LoadScene("FinalCutscene");
         }
 
